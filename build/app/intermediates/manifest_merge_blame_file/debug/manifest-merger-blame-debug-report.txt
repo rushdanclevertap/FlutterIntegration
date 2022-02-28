@@ -1,0 +1,329 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_ct"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:6:5-66
+14-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:6:22-64
+15    <!-- Recommended so that CleverTap knows when to attempt a network call -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:8:5-78
+16-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:8:22-76
+17    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+17-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:23:5-68
+17-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:23:22-65
+18    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+18-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:25:5-82
+18-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:25:22-79
+19    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Include required permissions for Advertising Id -->
+19-->[com.android.installreferrer:installreferrer:2.1] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\889550003882650225439cbc44d428db\jetified-installreferrer-2.1\AndroidManifest.xml:9:5-110
+19-->[com.android.installreferrer:installreferrer:2.1] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\889550003882650225439cbc44d428db\jetified-installreferrer-2.1\AndroidManifest.xml:9:22-107
+20    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+20-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\0309798e3906d3413b30c6bfae64207d\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+20-->[com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\0309798e3906d3413b30c6bfae64207d\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:22-76
+21
+22    <application
+22-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:10:5-64:19
+23        android:name="com.clevertap.android.sdk.Application"
+23-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:12:9-61
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.6.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\264d9551c65e454ca4a13f554e4afe35\core-1.6.0\AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:extractNativeLibs="false"
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:13:9-43
+28        android:label="flutter_ct" >
+28-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:11:9-35
+29        <activity
+29-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:14:9-36:20
+30            android:name="com.example.flutter_ct.MainActivity"
+30-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:15:13-41
+31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+31-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:19:13-163
+32            android:exported="true"
+32-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:16:13-36
+33            android:hardwareAccelerated="true"
+33-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:20:13-47
+34            android:launchMode="singleTop"
+34-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:17:13-43
+35            android:theme="@style/LaunchTheme"
+35-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:18:13-47
+36            android:windowSoftInputMode="adjustResize" >
+36-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:21:13-55
+37
+38            <!--
+39                 Specifies an Android theme to apply to this Activity as soon as
+40                 the Android process has started. This theme is visible to the user
+41                 while the Flutter UI initializes. After that, this theme continues
+42                 to determine the Window background behind the Flutter UI.
+43            -->
+44            <meta-data
+44-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:26:13-29:17
+45                android:name="io.flutter.embedding.android.NormalTheme"
+45-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:27:15-70
+46                android:resource="@style/NormalTheme" />
+46-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:28:15-52
+47
+48            <intent-filter>
+48-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:32:13-35:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:33:17-68
+49-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:33:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:34:17-76
+51-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:34:27-74
+52            </intent-filter>
+53        </activity>
+54        <!--
+55             Don't delete the meta-data below.
+56             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+57        -->
+58        <meta-data
+58-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:39:9-41:33
+59            android:name="flutterEmbedding"
+59-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:40:13-44
+60            android:value="2" />
+60-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:41:13-30
+61        <meta-data
+61-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:43:9-45:43
+62            android:name="CLEVERTAP_ACCOUNT_ID"
+62-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:44:13-48
+63            android:value="65R-654-5Z6Z" />
+63-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:45:13-41
+64        <meta-data
+64-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:46:9-48:38
+65            android:name="CLEVERTAP_TOKEN"
+65-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:47:13-43
+66            android:value="456-256" />
+66-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:48:13-36
+67        <!-- IMPORTANT: To force use Google AD ID to uniquely identify  users, use the following meta tag. GDPR mandates that if you are using this tag, there is prominent disclousure to your end customer in their application. Read more about GDPR here - https://clevertap.com/blog/in-preparation-of-gdpr-compliance/ -->
+68        <meta-data
+68-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:50:9-52:32
+69            android:name="CLEVERTAP_USE_GOOGLE_AD_ID"
+69-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:51:13-54
+70            android:value="1" />
+70-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:52:13-30
+71
+72        <service
+72-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:54:9-60:19
+73            android:name="com.clevertap.android.sdk.pushnotification.fcm.FcmMessageListenerService"
+73-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:55:13-100
+74            android:exported="true" >
+74-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:56:13-36
+75            <intent-filter>
+75-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:57:13-59:29
+76                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+76-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:58:17-77
+76-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:58:25-75
+77            </intent-filter>
+78        </service>
+79
+80        <activity
+80-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:12:9-15:75
+81            android:name="com.clevertap.android.sdk.InAppNotificationActivity"
+81-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:13:13-79
+82            android:configChanges="keyboardHidden"
+82-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:14:13-51
+83            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+83-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:15:13-72
+84        <activity
+84-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:16:9-19:77
+85            android:name="com.clevertap.android.sdk.CTInboxActivity"
+85-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:17:13-69
+86            android:configChanges="keyboardHidden"
+86-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:18:13-51
+87            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
+87-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:19:13-74
+88
+89        <receiver
+89-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:21:9-24:40
+90            android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"
+90-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:22:13-97
+91            android:enabled="true"
+91-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:23:13-35
+92            android:exported="false" />
+92-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:24:13-37
+93
+94        <service
+94-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:26:9-33:19
+95            android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService"
+95-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:27:13-100
+96            android:exported="false"
+96-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:28:13-37
+97            android:permission="android.permission.BIND_JOB_SERVICE" >
+97-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:29:13-69
+98            <intent-filter>
+98-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:30:13-32:29
+99                <action android:name="com.clevertap.BG_EVENT" />
+99-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:31:17-65
+99-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:31:25-62
+100            </intent-filter>
+101        </service>
+102        <service
+102-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:34:9-37:72
+103            android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService"
+103-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:35:13-97
+104            android:exported="false"
+104-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:36:13-37
+105            android:permission="android.permission.BIND_JOB_SERVICE" />
+105-->[com.clevertap.android:clevertap-android-sdk:4.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\80ab89d10d8ad64dc0cecf8182a26936\jetified-clevertap-android-sdk-4.0.0\AndroidManifest.xml:37:13-69
+106
+107        <receiver
+107-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:28:9-35:20
+108            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+108-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:29:13-78
+109            android:exported="true"
+109-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:30:13-36
+110            android:permission="com.google.android.c2dm.permission.SEND" >
+110-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:31:13-73
+111            <intent-filter>
+111-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:32:13-34:29
+112                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+112-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:33:17-81
+112-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:33:25-78
+113            </intent-filter>
+114        </receiver>
+115        <!--
+116             FirebaseMessagingService performs security checks at runtime,
+117             but set to not exported to explicitly avoid allowing another app to call it.
+118        -->
+119        <service
+119-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:41:9-48:19
+120            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+120-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:42:13-82
+121            android:directBootAware="true"
+121-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:43:13-43
+122            android:exported="false" >
+122-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:44:13-37
+123            <intent-filter android:priority="-500" >
+123-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:57:13-59:29
+124                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+124-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:58:17-77
+124-->C:\Users\rushd\AndroidStudioProjects\flutter_ct\android\app\src\main\AndroidManifest.xml:58:25-75
+125            </intent-filter>
+126        </service>
+127        <service
+127-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:49:9-55:19
+128            android:name="com.google.firebase.components.ComponentDiscoveryService"
+128-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:50:13-84
+129            android:directBootAware="true"
+129-->[com.google.firebase:firebase-common:20.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\cf44503f512bd01edbb9a42565c54f02\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+130            android:exported="false" >
+130-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:51:13-37
+131            <meta-data
+131-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:52:13-54:85
+132                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+132-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:53:17-119
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\a56e3d53fd5d36e5f52666c5a0543711\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:54:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\29c5673bc47885ea14d02ece37658da4\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+135                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+135-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\29c5673bc47885ea14d02ece37658da4\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\29c5673bc47885ea14d02ece37658da4\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+137            <meta-data
+137-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\9ffd7d0a6eddded2bb2cec8a91c6fbd4\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:30:13-32:85
+138                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+138-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\9ffd7d0a6eddded2bb2cec8a91c6fbd4\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:31:17-139
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.android.gms:play-services-measurement-api:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\9ffd7d0a6eddded2bb2cec8a91c6fbd4\jetified-play-services-measurement-api-20.0.2\AndroidManifest.xml:32:17-82
+140            <meta-data
+140-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\bfaa8387d061af9163bf78fbdd75ee7b\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+141                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+141-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\bfaa8387d061af9163bf78fbdd75ee7b\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\bfaa8387d061af9163bf78fbdd75ee7b\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+143        </service>
+144        <service
+144-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\c1b875a1567d127c75e5d36185d64378\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+145            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+145-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\c1b875a1567d127c75e5d36185d64378\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+146            android:exported="false" >
+146-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\c1b875a1567d127c75e5d36185d64378\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+147            <meta-data
+147-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\c1b875a1567d127c75e5d36185d64378\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+148                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+148-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\c1b875a1567d127c75e5d36185d64378\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+149                android:value="cct" />
+149-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\c1b875a1567d127c75e5d36185d64378\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+150        </service>
+151
+152        <provider
+152-->[com.google.firebase:firebase-common:20.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\cf44503f512bd01edbb9a42565c54f02\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+153            android:name="com.google.firebase.provider.FirebaseInitProvider"
+153-->[com.google.firebase:firebase-common:20.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\cf44503f512bd01edbb9a42565c54f02\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+154            android:authorities="com.example.flutter_ct.firebaseinitprovider"
+154-->[com.google.firebase:firebase-common:20.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\cf44503f512bd01edbb9a42565c54f02\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+155            android:directBootAware="true"
+155-->[com.google.firebase:firebase-common:20.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\cf44503f512bd01edbb9a42565c54f02\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+156            android:exported="false"
+156-->[com.google.firebase:firebase-common:20.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\cf44503f512bd01edbb9a42565c54f02\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+157            android:initOrder="100" />
+157-->[com.google.firebase:firebase-common:20.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\cf44503f512bd01edbb9a42565c54f02\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+158
+159        <receiver
+159-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:29:9-33:20
+160            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+160-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:30:13-85
+161            android:enabled="true"
+161-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:31:13-35
+162            android:exported="false" >
+162-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:32:13-37
+163        </receiver>
+164
+165        <service
+165-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:35:9-38:40
+166            android:name="com.google.android.gms.measurement.AppMeasurementService"
+166-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:36:13-84
+167            android:enabled="true"
+167-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:37:13-35
+168            android:exported="false" />
+168-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:38:13-37
+169        <service
+169-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:39:9-43:72
+170            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+170-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:40:13-87
+171            android:enabled="true"
+171-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:41:13-35
+172            android:exported="false"
+172-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:42:13-37
+173            android:permission="android.permission.BIND_JOB_SERVICE" />
+173-->[com.google.android.gms:play-services-measurement:20.0.2] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\be0731b2a81262be3b91d4d07380739b\jetified-play-services-measurement-20.0.2\AndroidManifest.xml:43:13-69
+174
+175        <meta-data
+175-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\0a6ac35ef17eb6546ba1fdb2976715b2\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+176            android:name="com.google.android.gms.version"
+176-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\0a6ac35ef17eb6546ba1fdb2976715b2\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+177            android:value="@integer/google_play_services_version" />
+177-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\0a6ac35ef17eb6546ba1fdb2976715b2\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+178
+179        <service
+179-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\2ebfb026f9cdcbb544bc48708eefe8cc\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+180            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+180-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\2ebfb026f9cdcbb544bc48708eefe8cc\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+181            android:exported="false"
+181-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\2ebfb026f9cdcbb544bc48708eefe8cc\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+182            android:permission="android.permission.BIND_JOB_SERVICE" >
+182-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\2ebfb026f9cdcbb544bc48708eefe8cc\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+183        </service>
+184
+185        <receiver
+185-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\2ebfb026f9cdcbb544bc48708eefe8cc\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+186            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+186-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\2ebfb026f9cdcbb544bc48708eefe8cc\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+187            android:exported="false" />
+187-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\rushd\.gradle\caches\transforms-2\files-2.1\2ebfb026f9cdcbb544bc48708eefe8cc\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+188    </application>
+189
+190</manifest>
